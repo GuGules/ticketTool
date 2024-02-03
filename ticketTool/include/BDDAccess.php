@@ -1,5 +1,7 @@
 <?php
 
+$connectedUser = "";
+
 function seConnecter()
 {
    $serveur = 'mysql:host=localhost;port=3307';
@@ -13,3 +15,12 @@ function seConnecter()
    }
    return $pdo;
 };
+
+function getUsers($bdd){
+   $req = "select nom,prenom from utilisateur";
+   $res = $bdd->query($req);
+   $lesLignes = $res->fetchAll();
+   return $lesLignes;
+
+}
+
