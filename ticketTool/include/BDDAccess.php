@@ -1,6 +1,7 @@
 <?php
-
-$connectedUser = "";
+session_start();
+include('/var/www/html/ticketTool/classes/user.php');
+$user = new User();
 
 function seConnecter()
 {
