@@ -6,6 +6,8 @@ CREATE TABLE IF NOT EXISTS utilisateur (
     nom varchar(10),
     prenom varchar(10),
     adresseIP varchar(15),
+    SHA_PASS varchar(64),
+    username varchar(25),
     PRIMARY KEY (id)
 );
 
