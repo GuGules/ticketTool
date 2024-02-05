@@ -12,6 +12,8 @@ function Login($bdd, $user, $passwd)
 
         $_SESSION['isLoggedIn'] = true;
         $_SESSION['ConnectedUser'] = $user;
+        return true;
+    } else {
+        return false;
     }
-    return $_SESSION['isLoggedIn'];
 }

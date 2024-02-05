@@ -2,10 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirection en cours</title>
-    <link rel="icon" href="favicon.ico">
+    <?php include('include/head.php');?>
 </head>
 
 <body>
@@ -16,14 +13,13 @@
         echo 'je rentre';
         if (Login($bdd, $_GET['username'], $_GET['password'])) {
             echo 'j ai testé';
-            header('Location: connected.php');
+            header('Location: menu.php');
             
         } else {
-            echo 'j ai testé';
-            echo 'Mot de passe incorrect';
+            header('Location:index.php?error=i_log');
         }
     } else {
-        echo 'Aucun identifiant saisi';
+       header('Location: index.php?error=emp_log');
     }
     ?>
 
