@@ -22,7 +22,7 @@ error_reporting(E_ALL);
           <?php if (isset($_GET['error'])) {
             if ($_GET['error'] == "i_log") {
               echo "<p>Nom d'utilisateur ou mot de passe incorrect</p>";
-            } else if ($_GET['error'] == 'emp_log') {
+            } else if ($_GET['error'] == "emp_log") {
               echo "<p>Aucune informations d'identification entrées</p>";
             }
           } ?>

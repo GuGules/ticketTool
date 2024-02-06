@@ -1,55 +1,70 @@
 body{
     padding-top: 2%;
+    background-color: #FFA400;
 }
 
 #menu-barre{
-    align-content: left;
-    justify-content: left;
-    align-items: left;
-    text-align: left;
+    background-color: white;
+    align-items :center;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 20px ;
 }
 
-
-
-/* CSS Buttons */
-
-.menu-btn {
-    background-color: #0095ff;
-    border: 1px solid transparent;
-    border-radius: 3px;
-    box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+  /* Bouton CSS */
+  .menu-btn {
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
     box-sizing: border-box;
-    color: #fff;
+    color: rgba(0, 0, 0, 0.85);
     cursor: pointer;
-    display: inline-block;
-    font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 1.15385;
+    display: inline-flex;
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
     margin: 0;
-    outline: none;
-    padding: 8px .8em;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
     position: relative;
-    text-align: center;
     text-decoration: none;
+    transition: all 250ms;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
     vertical-align: baseline;
-    white-space: nowrap;
+    width: auto;
+  }
+
+  form{
+    padding-top: 2%;
+    padding-bottom :2%;
+  }
+
+  #menu{
+    padding-top : 10%;
   }
   
   .menu-btn:hover,
   .menu-btn:focus {
-    background-color: #07c;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: rgba(0, 0, 0, 0.65);
   }
   
-  .menu-btn:focus {
-    box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+  .menu-btn:hover {
+    transform: translateY(-1px);
   }
   
   .menu-btn:active {
-    background-color: #0064bd;
-    box-shadow: none;
+    background-color: #F0F0F1;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
   }
-

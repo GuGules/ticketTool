@@ -8,6 +8,7 @@ CREATE TABLE IF NOT EXISTS utilisateur (
     adresseIP varchar(15),
     SHA_PASS varchar(64),
     username varchar(25),
+    adminMode boolean,
     PRIMARY KEY (id)
 );
 
@@ -25,24 +26,10 @@ CREATE TABLE IF NOT EXISTS  couleur (
     PRIMARY KEY(id)
 );
 
-CREATE TABLE IF NOT EXISTS agencer (
-    idTickets int,
-    idGrav int,
-    FOREIGN KEY (idGrav) REFERENCES couleur(id),
-    FOREIGN KEY (idTickets) REFERENCES tickets(id)    
-);
-
-CREATE TABLE IF NOT EXISTS soumettre (
-    idUser int,
-    idTickets int,
-    CONSTRAINT fk1 FOREIGN KEY (idUser) REFERENCES utilisateur(id),
-    CONSTRAINT fk2 FOREIGN KEY (idTickets) REFERENCES tickets(id)
-);
-
 CREATE TABLE IF NOT EXISTS valider (
-    idUser int,
+    idAdmin int,
     idTickets int,
-    CONSTRAINT fk3 FOREIGN KEY (idUser) REFERENCES utilisateur(id),
+    CONSTRAINT fk3 FOREIGN KEY (idAdmin) REFERENCES utilisateur(id),
     CONSTRAINT fk4 FOREIGN KEY (idTickets) REFERENCES tickets(id)
 );
 

@@ -16,7 +16,7 @@ function seConnecter()
 };
 
 function getUsers($bdd){
-   $req = "select nom,prenom from utilisateur";
+   $req = "select * from utilisateur";
    $res = $bdd->query($req);
    $lesLignes = $res->fetchAll();
    return $lesLignes;

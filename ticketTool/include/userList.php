@@ -10,6 +10,7 @@
     foreach ($users as $user){
         $nom = $user['nom'];
         $prenom = $user['prenom'];
+        $adminMode = $user['adminMode']
     ?>
     <tr>
         <td><?php echo $nom;?></td>

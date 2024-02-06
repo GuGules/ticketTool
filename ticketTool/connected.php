@@ -6,7 +6,7 @@
 <body>
     <?php
         include("include/BDDAccess.php");
-        echo "<h1>".$_SESSION['ConnectedUser']."</h1>";
+        echo "<h1>".$_SESSION['adminMode']."</h1>";
     ?>
 </body>
 </html>
