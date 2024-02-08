@@ -7,7 +7,7 @@
 
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="imprimante">
         <div class="row">
             <div class="col-lg-11 col-xl-11 box">
                 <div class="col-lg-3 col-xl-3">

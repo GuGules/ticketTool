@@ -2,6 +2,10 @@ body{
     background-color:#FFA400;
 }
 
+#imprimante{
+  padding-top:10%;
+}
+
 .box{
     background-color: white;
 }
