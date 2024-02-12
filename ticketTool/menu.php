@@ -19,7 +19,7 @@
                 <?php if($_SESSION['adminMode']==1){
                     echo '<form method="POST" action="#"><button class="menu-btn" type="submit">Administration</button></form>';
                 }?>
-                <form method="POST" action="account_settings.php"><button class="menu-btn" type="submit">Paramètres de compte</button></form>  
+                <form method="POST" action="accountSettings.php"><button class="menu-btn" type="submit">Paramètres de compte</button></form>  
                 <form method="POST" action="script_disconnect.php"><button class="menu-btn" type="submit">Déconnexion</button></form>  
                 <?php echo "<p class='feur'>Utilisateur Connecté : " . $_SESSION['ConnectedUser'] . "</p>"; ?>
             </div>

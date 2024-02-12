@@ -8,6 +8,7 @@ body{
 
 .box{
     background-color: white;
+    border-radius: 10px;
 }
 
 input[type=text] {
@@ -21,7 +22,7 @@ input[type=password] {
   }
 
 .padb-20{
-  padding-bottom: 20%;
+  padding-bottom: 2%;
 }
 
 
