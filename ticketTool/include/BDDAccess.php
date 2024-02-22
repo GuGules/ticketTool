@@ -1,6 +1,6 @@
 <?php
 session_start();
-$_SESSION['sessionStarted']=false;
+
 function seConnecter()
 {
    $serveur = 'mysql:host=localhost;port=3307';

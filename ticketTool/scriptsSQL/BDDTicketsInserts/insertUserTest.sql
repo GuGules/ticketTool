@@ -1,2 +1,0 @@
-USE BDDTickets;
-INSERT INTO utilisateur(nom,prenom,adresseIP,SHA_PASS,username,adminMode) VALUES ('test','test','127.0.0.1','b03ddf3ca2e714a6548e7495e2a03f5e824eaac9837cd7f159c67b90fb4b7342','test',1);
