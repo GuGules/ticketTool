@@ -4,10 +4,9 @@ error_reporting(E_ALL);
 ?>
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <?php
-  $SESSION['isLoggedIn'] = false;
+  $_SESSION['isLoggedIn'] = false;
   include('include/head.php'); ?>
   <link rel="stylesheet" href="style/style.css" type="text/css">
 </head>
@@ -17,7 +16,7 @@ error_reporting(E_ALL);
     <div class="row">
       <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4" id="connectForm">
         <img id="img" src="favicon.ico">
-        <form action="script_connect.php" method="GET">
+        <form action="scripts/scriptConnect.php" method="POST">
           <h5>Connexion</h5>
           <?php if (isset($_GET['error'])) {
             if ($_GET['error'] == "i_log") {

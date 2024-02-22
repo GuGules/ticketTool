@@ -1,6 +1,4 @@
 <?php
-session_start();
-
 function seConnecter()
 {
    $serveur = 'mysql:host=localhost;port=3307';

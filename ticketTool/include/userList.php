@@ -1,7 +1,7 @@
 <?php
     $users = getUsers($bdd);
 ?>
-<table>
+<table class="table">
     <thead>Liste des utilisateurs</thead>
     <tr>
         <td>Nom</td>
@@ -10,7 +10,7 @@
     foreach ($users as $user){
         $nom = $user['nom'];
         $prenom = $user['prenom'];
-        $adminMode = $user['adminMode']
+        $adminMode = $user['adminMode'];
     ?>
     <tr>
         <td><?php echo $nom;?></td>

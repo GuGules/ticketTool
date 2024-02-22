@@ -91,3 +91,13 @@ body{
 .submit-btn:focus {
   background-color: #F082AC;
 }
+
+
+
+
+/*autres*/
+
+
+.padb-20 {
+  padding-bottom: 20%;
+}
