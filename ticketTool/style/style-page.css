@@ -1,0 +1,68 @@
+body{
+    background-color:#FFA400;
+}
+
+.padt-2{
+  padding-top:2%;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+.adminMenu{
+  height: 50vh;
+  overflow-y: scroll;
+}
+
+.btn-tick:hover{
+  cursor: url('cursor.cur'),auto;
+}
+
+#imprimante{
+  padding-top:10vh;
+}
+
+.max-table-80{
+  max-height: 80vh;
+  overflow-y: scroll;
+}
+
+.padt-2{
+  padding-top: 2%;
+}
+
+.mg-10{
+  margin-top: 5%;
+}
+
+.tickets-box{
+  overflow: scroll ;
+  max-height: 80%;
+}
+
+.box{
+    background-color: white;
+    border-radius: 10px;
+}
+
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid #FFA400;
+  }
+
+input[type=password] {
+    border: none;
+    border-bottom: 2px solid #FFA400;
+  }
+
+.padb-20{
+  padding-bottom: 2%;
+}
+
+.separateur{
+  margin-left:10%;
+  margin-right: 10%;
+}
+
+
