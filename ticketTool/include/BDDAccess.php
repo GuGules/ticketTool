@@ -1,7 +1,7 @@
 <?php
 function seConnecter()
 {
-   $serveur = 'mysql:host=localhost;port=3307';
+   $serveur = 'mysql:host=localhost;port=3306';
    $bdd = 'dbname=BDDTickets';
    $user = 'ticketTool';
    $mdp = 'P@ssw0rd';
